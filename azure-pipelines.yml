@@ -18,6 +18,6 @@ steps:
 - task: Docker@2
   displayName: Push an image
   inputs:
-    containerRegistry: 'bakhaissakhov'
+    containerRegistry: 'bakha-image'
     repository: $(imageName)
     command: 'push'
