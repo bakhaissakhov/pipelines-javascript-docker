@@ -14,3 +14,10 @@ steps:
     repository: $(imageName)
     command: build
     Dockerfile: app/Dockerfile
+
+- task: Docker@2
+  displayName: Push an image
+  inputs:
+    containerRegistry: 'bakha-image'
+    repository: 'javascript-app'
+    command: 'push'
